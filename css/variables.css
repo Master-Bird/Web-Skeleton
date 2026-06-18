@@ -1,0 +1,30 @@
+:root{
+
+    /* Colors */
+    --primary-color:#2563eb;
+    --secondary-color:#1e293b;
+    --accent-color:#f97316;
+
+    --background-color:#f8fafc;
+    --text-color:#334155;
+    --white:#ffffff;
+
+
+    /* Fonts */
+    --main-font:Arial, Helvetica, sans-serif;
+
+
+    /* Spacing */
+    --padding-small:10px;
+    --padding-medium:20px;
+    --padding-large:40px;
+
+
+    /* Border Radius */
+    --radius:8px;
+
+
+    /* Shadow */
+    --shadow:0 4px 10px rgba(0,0,0,0.1);
+
+}

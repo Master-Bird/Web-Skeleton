@@ -1,0 +1,24 @@
+/* Tablets */
+@media(max-width:768px){
+
+    .about-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media(max-width:768px){
+
+}
+.services-grid{
+    grid-template-columns: 1fr;
+}
+.portfolio-grid{
+    grid-template-columns: 1fr;
+}
+
+
+/* Phones */
+
+@media(max-width:480px){
+
+}
