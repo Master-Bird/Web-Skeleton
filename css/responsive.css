@@ -1,45 +1,22 @@
-@media (max-width: 768px){
+@media(max-width:768px){
 
-    /* ABOUT / SERVICES / PORTFOLIO GRIDS */
     .about-grid,
     .services-grid,
     .portfolio-grid{
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
     }
 
-    /* NAVIGATION STACK */
     nav{
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        flex-direction:column;
+        gap:10px;
     }
 
     .nav-links{
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
+        flex-direction:column;
+        text-align:center;
     }
-
-    /* HERO TEXT */
-    .hero-content h1{
-        font-size: 28px;
-    }
-
-    .hero-content p{
-        font-size: 16px;
-    }
-}
-@media (max-width: 480px){
 
     h1{
-        font-size: 28px;
-    }
-
-    h2{
-        font-size: 24px;
-    }
-
-    section{
-        padding: 60px 0;
+        font-size:28px;
     }
 }

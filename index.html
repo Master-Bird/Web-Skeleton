@@ -6,7 +6,6 @@
 
     <title>Website Skeleton</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -14,182 +13,135 @@
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container">
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">MyWebsite</div>
 
-            <nav>
-                <div class="logo">MyWebsite</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-                <ul class="nav-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-
-            </nav>
-
+<!-- HERO -->
+<section id="hero">
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <h1>Hi, I'm Dennis 👋</h1>
+            <p>A beginner web developer building modern, responsive websites using HTML, CSS, JavaScript and Git.</p>
+            <a href="#portfolio" class="btn">View My Projects</a>
         </div>
-    </header>
+    </div>
+</section>
 
-    <!-- HERO -->
-    <section id="hero">
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I am learning web development and building real-world projects step by step.</p>
 
-        <div class="container hero-grid">
+        <div class="about-grid">
+            <div class="card">
+                <h3>💻 Web Development</h3>
+                <p>Building responsive websites.</p>
+            </div>
 
-            <div class="hero-text">
-                <h1>Hi, I'm Dennis 👋</h1>
+            <div class="card">
+                <h3>🎯 Goals</h3>
+                <p>Become a professional developer.</p>
+            </div>
 
-                <p>
-                    A beginner web developer building modern, responsive websites using HTML, CSS, JavaScript and Git.
-                </p>
+            <div class="card">
+                <h3>📚 Learning</h3>
+                <p>HTML, CSS, JavaScript & Git.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <a href="#portfolio" class="btn">View My Projects</a>
+<!-- SERVICES -->
+<section id="services">
+    <div class="container">
+        <h2>My Services</h2>
+        <p>What I can help with</p>
+
+        <div class="services-grid">
+            <div class="card">
+                <h3>🌐 Web Design</h3>
+                <p>Modern website layouts.</p>
+            </div>
+
+            <div class="card">
+                <h3>⚡ Frontend Dev</h3>
+                <p>Interactive user interfaces.</p>
+            </div>
+
+            <div class="card">
+                <h3>📱 Responsive Design</h3>
+                <p>Mobile-friendly websites.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <div class="container">
+        <h2>Projects</h2>
+        <p>Sample projects (placeholders)</p>
+
+        <div class="portfolio-grid">
+
+            <div class="card">
+                <img src="https://via.placeholder.com/600x400.png" alt="Project 1">
+                <h3>Portfolio Website</h3>
+                <p>Personal developer portfolio.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/600x400.png" alt="Project 2">
+                <h3>Landing Page</h3>
+                <p>Business landing page design.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/600x400.png" alt="Project 3">
+                <h3>JS App</h3>
+                <p>Simple JavaScript application.</p>
             </div>
 
         </div>
+    </div>
+</section>
 
-    </section>
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Let’s work together</p>
 
-    <!-- ABOUT -->
-    <section id="about">
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
 
-        <div class="container">
+<footer>
+    <div class="container">
+        <p>© 2026 Dennis Odhiambo. All rights reserved.</p>
+    </div>
+</footer>
 
-            <h2>About Me</h2>
-
-            <p>
-                I am a beginner web developer from Kenya learning how to build modern and responsive websites.
-            </p>
-
-            <div class="about-grid">
-
-                <div class="card">
-                    <h3>💻 Web Development</h3>
-                    <p>Building responsive and modern websites.</p>
-                </div>
-
-                <div class="card">
-                    <h3>🎯 Goals</h3>
-                    <p>To become a professional full-stack developer.</p>
-                </div>
-
-                <div class="card">
-                    <h3>📚 Learning</h3>
-                    <p>HTML, CSS, JavaScript and Git.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services">
-
-        <div class="container">
-
-            <h2>My Services</h2>
-
-            <p>What I can help you with</p>
-
-            <div class="services-grid">
-
-                <div class="card">
-                    <h3>🌐 Website Design</h3>
-                    <p>Modern and responsive website layouts.</p>
-                </div>
-
-                <div class="card">
-                    <h3>⚡ Frontend Development</h3>
-                    <p>Clean and interactive user interfaces.</p>
-                </div>
-
-                <div class="card">
-                    <h3>📱 Responsive Design</h3>
-                    <p>Websites that work on all devices.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section id="portfolio">
-
-        <div class="container">
-
-            <h2>My Projects</h2>
-
-            <p>Some of the work I will build</p>
-
-            <div class="portfolio-grid">
-
-                <div class="card">
-                    <img src="https://placehold.co/600x400" alt="Project 1">
-                    <h3>Portfolio Website</h3>
-                    <p>My personal developer portfolio.</p>
-                </div>
-
-                <div class="card">
-                    <img src="https://placehold.co/600x400" alt="Project 2">
-                    <h3>Landing Page</h3>
-                    <p>A modern business landing page.</p>
-                </div>
-
-                <div class="card">
-                    <img src="https://placehold.co/600x400" alt="Project 3">
-                    <h3>JavaScript App</h3>
-                    <p>A simple interactive web app.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-
-        <div class="container">
-
-            <h2>Contact Me</h2>
-
-            <p>Let’s work together 👋</p>
-
-            <form class="contact-form">
-
-                <input type="text" name="name" id="name" placeholder="Your Name" required>
-
-                <input type="email" name="email" id="email" placeholder="Your Email" required>
-
-                <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="container">
-            <p>© 2026 Dennis Odhiambo. All rights reserved.</p>
-        </div>
-
-    </footer>
-
-    <!-- JS -->
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

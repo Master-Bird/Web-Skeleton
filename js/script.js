@@ -1,12 +1,13 @@
 // ===============================
-// Basic Site Initialization
+// Website Skeleton - JS (Clean Version)
 // ===============================
-console.log("Website Skeleton Loaded Successfully");
 
+console.log("Website loaded successfully");
 
 // ===============================
-// Smooth scroll (extra safety fallback)
+// Smooth scrolling (navigation)
 // ===============================
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e){
         e.preventDefault();
@@ -20,34 +21,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
 // ===============================
-// Active Section Highlight
-// ===============================
-
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-    let current = "";
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-
-        if(pageYOffset >= sectionTop){
-            current = section.getAttribute("id");
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove("active");
-
-        if(link.getAttribute("href") === "#" + current){
-            link.classList.add("active");
-        }
-    });
-});
-// ===============================
-// Contact Form Handling (Basic)
+// Contact form (demo behavior)
 // ===============================
 
 const form = document.querySelector(".contact-form");
