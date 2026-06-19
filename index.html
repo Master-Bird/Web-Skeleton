@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="theme-color" content="#2563eb">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,6 +44,7 @@
 </head>
 
 <body>
+<div class="scroll-progress"></div>
 
 <header>
 
@@ -93,17 +95,13 @@
 
     <div class="container hero-content">
 
-        <h1>Hello, I'm Dennis 👋</h1>
-
-        <h3 class="hero-subtitle">
-            Frontend Developer • Learning Full Stack Development
-        </h3>
-
+        <h1>
+            Hi, I'm Dennis Odhiambo<br>
+            <span>Frontend Developer & Problem Solver</span>
+        </h1>
+        
         <p class="hero-text">
-
-            Building modern, responsive websites and learning
-            professional web development one project at a time.
-
+        I build responsive websites using HTML, CSS and JavaScript while continuously improving my Full Stack Development skills.
         </p>
 
 
@@ -481,6 +479,13 @@ Continuing to learn, build projects and gain professional experience.
     <div class="container">
 
         <h2>Projects</h2>
+        <div class="portfolio-filter">
+
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="app">Apps</button>
+
+</div>
 
         <p>
 
@@ -494,7 +499,7 @@ Continuing to learn, build projects and gain professional experience.
 
 
 
-            <div class="card">
+            <div class="card" data-category="web">
 
 <img src="images/project1.jpg"
 alt="Portfolio Skeleton"
@@ -519,7 +524,7 @@ View Details
 
 
 
-<div class="card">
+<div class="card" data-category="app">
 
 <img src="images/project2.jpg"
 alt="Android To-Do App"
@@ -544,7 +549,7 @@ Coming Soon
 
 
 
-<div class="card">
+<div class="card" data-category="web">
 
 <img src="images/project3.jpg"
 alt="Future projects"
@@ -648,7 +653,7 @@ Coming Soon
 
         <p>
 
-            © 2026 Dennis Odhiambo
+            © 2026 Dennis Odhiambo. All Rights Reserved.
 
         </p>
 
