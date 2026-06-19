@@ -2,7 +2,6 @@
 // Website Skeleton - JS (Clean Version)
 // ===============================
 
-console.log("Website loaded successfully");
 
 // ===============================
 // Smooth scrolling (navigation)
@@ -29,13 +28,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const form = document.querySelector(".contact-form");
 
 if(form){
-    form.addEventListener("submit", function(e){
-        e.preventDefault();
-
-        alert("Message sent successfully (demo mode)");
-
-        form.reset();
-    });
+    // Contact form now handled by Formspree
+    // No JS needed anymore
 }
 // ===============================
 // Hamburger Menu
@@ -82,3 +76,88 @@ hiddenElements.forEach(el => {
     observer.observe(el);
 
 });
+// ===============================
+// Active Navigation Highlight
+// ===============================
+
+const sections = document.querySelectorAll("section");
+const navItems = document.querySelectorAll(".nav-links a");
+
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if(window.scrollY >= sectionTop - 200){
+
+            current = section.getAttribute("id");
+
+        }
+
+    });
+
+
+    navItems.forEach(link => {
+
+        link.classList.remove("active");
+
+        if(link.getAttribute("href") === "#" + current){
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
+// ===============================
+// Dark Mode
+// ===============================
+
+const themeBtn =
+document.querySelector(".theme-toggle");
+
+
+if(themeBtn){
+
+const savedTheme =
+localStorage.getItem("theme");
+
+
+if(savedTheme === "dark"){
+
+document.body.classList.add("dark");
+
+themeBtn.textContent="☀️";
+
+}
+
+
+themeBtn.addEventListener("click",()=>{
+
+
+document.body.classList.toggle("dark");
+
+
+const dark =
+document.body.classList.contains("dark");
+
+
+themeBtn.textContent =
+dark ? "☀️" : "🌙";
+
+
+localStorage.setItem(
+"theme",
+dark ? "dark":"light"
+);
+
+
+});
+
+}
